@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>🅼🅾🆅🅸🅴 🅱🆄🅵🅵-details</title>
+          <!-- Jquery Library file -->
+        <script src="../js/Jquery3.4.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+    
+        <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white" href="#">🅼🅾🆅🅸🅴 🅱🆄🅵🅵</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="../index.html" class="nav-link"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="movie-gallery.html"><b class="fa-lg">Movie Gallery</b><span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- Content   -->
+        <div class="container movieDetail">
+            <div class="row">
+                <div class="col-4">
+                    <div class="movie-image">
+                            <!--Movie Image Here  -->
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <h1 class="movie-title"></h1>
+                    <div class="row description">
+                        <p class="movie-runtime"><b>Runtime</b> : </p>
+                        <p class="movie-rating">
+                            <img height="25px" src="../images/imdbLogo.jpg" alt="imdbLogo.png">
+                            <span class="movie-rating-value"> </span> 
+                        </p>
+                        <p class="movie-releaseDate"><b>Release Date</b> : </p>
+                        <p class="movie-language"><b>Language</b> : </p>
+                    </div>
+                    <div>
+                        <p class="movie-overview"></p>
+                    </div>
+                    <div class="row genre">
+                        <p class="movie-genre"><b>Genre</b> : </p>
+                    </div>
+                    <div class="row homepage">
+                        <p class="movie-homepage"><b>Home Page</b> : </p>
+                    </div>
+                    <div class="row video-button">
+                        <p class="movie-video"><b>Play Video</b> : <button id="video-play"><i class="fa fa-play fa-lg"></i></button> </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Cast</h2>
+            <div id="slider-container" class="slider">
+                <div class="slide castSlider">
+                            <!-- Cast Image Here -->
+                    
+                            <!-- <figcaption id="castName">
+                                Cast Name Here
+                            </figcaption> -->
+                        </div>
+            </div>
+        </div>
+
+        <div class="container video">
+            <h2>Trailer</h2>
+            <!-- Video Display -->
+        </div>
+
+        <div class="container">
+            <h3>Related Movies</h3>
+            <div id="slider-container" class="slider">
+                <div class="slide relatedMovie">
+                            <!-- Movie Image Here -->
+                        </div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <p>Authorities : Cybage Software, Pune<br>
+            <a href="mailto:hege@example.com">Movie-Buff.com</a></p>
+        </footer>
+    
+    <!-- Custom Javascript file -->
+    <script src="../js/movieDetails.js"></script>
+    <script src="../js/carousel.js"></script>
+    <link rel="stylesheet" href="../css/movie-gallery.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+
+</body>
+</html>

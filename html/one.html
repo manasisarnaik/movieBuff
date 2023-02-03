@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+var Clicks = 0 ;
+var like;
+function AddClick(){
+like = Clicks + 1;
+document.getElementById('CountedClicks').innerHTML = like + ' Likes';
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks" style="background-color:orangered">0 Likes</span><br>
+<button style="background-color:orangered" onclick="AddClick()">Like</button>
+
+<span id="CountedClicks" style="background-color:orangered">0 Dislikes</span><br>
+<button style="background-color:orangered" onclick="SubClick()">Dislike</button>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🅼🅾🆅🅸🅴 🅱🆄🅵🅵-gallery</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="../css/movie-gallery.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+
+</head>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+                <a class="navbar-brand" href="../index.html">🅼🅾🆅🅸🅴 🅱🆄🅵🅵</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a href="../index.html" class="nav-link"><i class="fa fa-home fa-2x"></i></a>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i style="color:tomato;" class="fa fa-cogs fa-2x"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../html/user.html"><i class="fa fa-pencil fa-fw"></i> Edit Profile</a>
+                            <a class="dropdown-item" href="#"><b class="fa fa-cog fa-spin fa-fw"></b> App Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../html/login.html"><b class="fa fa-power-off fa-fw"></b> Sign Out</a>
+                        </div>
+                        </li>
+                    </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input id="myInput" class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+                </form>
+                </div>
+            </nav>
+            
+            <!-- Carousel -->
+            <div class="container-fluid py-3">
+                <div id="movie" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../images/ww-1984.jpg" alt="Los Angeles" width="800" height="400">
+                        <div class="carousel-caption">
+                            <h1>Wonder Woman 1984</h1>
+                        </div>    
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#movie" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#movie" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                </div>
+
+            <!-- Popular Movies -->
+        <main>
+                <div class="container">
+                    <h2>Popular Movies</h2>
+                    <div id="slider-container" class="slider">
+                        <div class="slide popular-movies">
+                                    <!-- Movie Image Here -->
+                        </div>
+                    </div>
+                </div>
+            <!-- Top Rated Movies -->
+                <div class="container">
+                    <h2>Top Rated Movies</h2>
+                    <div id="slider-container" class="slider">
+                        <div class="slide top-rated-movies">
+                                    <!-- Movie Image Here -->
+                        </div>
+                    </div>
+                </div>
+            <!-- Latest Movies  -->
+                <div class="container">
+                    <h2>Latest Movies</h2>
+                    <div id="slider-container" class="slider">
+                        <div class="slide latest-movies">
+                                    <!-- Movie Image Here -->
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+
+        <footer>
+            <p>Authorities : Cybage Software, Pune<br>
+            <a href="mailto:hege@example.com">Movie-Buff.com</a></p>
+        </footer>
+
+    <!-- Jquery Library file -->
+    <script src="../js/Jquery3.4.1.min.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="../js/moviesLibrary.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script>
+        getPopularMovies();
+        getTopRatedMovies();
+        getLatestMovies();
+    </script>
+</body>
+
+</html>
